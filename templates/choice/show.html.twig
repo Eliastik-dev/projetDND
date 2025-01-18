@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Choice{% endblock %}
+
+{% block body %}
+    <h1>Choice</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ choice.id }}</td>
+            </tr>
+            <tr>
+                <th>ChoiceDescription</th>
+                <td>{{ choice.choiceDescription }}</td>
+            </tr>
+            <tr>
+                <th>EffectHp</th>
+                <td>{{ choice.effectHp }}</td>
+            </tr>
+            <tr>
+                <th>EffectStrenght</th>
+                <td>{{ choice.effectStrenght }}</td>
+            </tr>
+            <tr>
+                <th>EffectAgility</th>
+                <td>{{ choice.effectAgility }}</td>
+            </tr>
+            <tr>
+                <th>EffectIntelligence</th>
+                <td>{{ choice.effectIntelligence }}</td>
+            </tr>
+            <tr>
+                <th>EffectWisdom</th>
+                <td>{{ choice.effectWisdom }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_choice_index') }}">back to list</a>
+
+    <a href="{{ path('app_choice_edit', {'id': choice.id}) }}">edit</a>
+
+    {{ include('choice/_delete_form.html.twig') }}
+{% endblock %}

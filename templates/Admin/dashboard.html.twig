@@ -1,0 +1,85 @@
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="text-center">Bienvenue sur le tableau de bord</h1>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Utilisateurs</div>
+                <div class="card-body">
+                    <h5 class="card-title">Gérer les utilisateurs</h5>
+                    <p class="card-text">Ajoutez, modifiez ou supprimez les utilisateurs.</p>
+                    <a href="{{ path('admin_user_index') }}" class="btn btn-light">Voir les utilisateurs</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-4">
+            <div class="card text-white bg-primary-subtle mb-3">
+                <div class="card-header">Races</div>
+                <div class="card-body">
+                    <h5 class="card-title">Gérer les races</h5>
+                    <p class="card-text">Ajoutez, modifiez ou supprimez les races.</p>
+                    <a href="{{ path('admin_race_index') }}" class="btn btn-light">Voir les races</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-4">
+            <div class="card text-white bg-success-subtle mb-3">
+                <div class="card-header">Histoires</div>
+                <div class="card-body">
+                    <h5 class="card-title">Gérer les histoires</h5>
+                    <p class="card-text">Ajoutez, modifiez ou supprimez les histoires.</p>
+                    <a href="{{ path('admin_story_index') }}" class="btn btn-light">Voir les histoires</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-4">
+            <div class="card text-white bg-info-subtle mb-3">
+                <div class="card-header">Épisodes</div>
+                <div class="card-body">
+                    <h5 class="card-title">Gérer les épisodes</h5>
+                    <p class="card-text">Ajoutez, modifiez ou supprimez les épisodes.</p>
+                    <a href="{{ path('admin_episode_index') }}" class="btn btn-light">Voir les épisodes</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-4">
+            <div class="card text-white bg-warning-subtle mb-3">
+                <div class="card-header">Choix</div>
+                <div class="card-body">
+                    <h5 class="card-title">Gérer les choix</h5>
+                    <p class="card-text">Ajoutez, modifiez ou supprimez les choix.</p>
+                    <a href="{{ path('admin_choice_index') }}" class="btn btn-light">Voir les choix</a>
+                </div>
+            </div>
+        </div>
+
+{#         <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Statistiques</div>
+                <div class="card-body">
+                    <h5 class="card-title">Consultez vos données</h5>
+                    <p class="card-text">Visualisez les métriques importantes de votre application.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-header">Paramètres</div>
+                <div class="card-body">
+                    <h5 class="card-title">Configuration</h5>
+                    <p class="card-text">Modifiez les paramètres de votre application.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> #}
+{% endblock %}
